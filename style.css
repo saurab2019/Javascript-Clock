@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    text-align: center;
+    font-family: 'Ubuntu Mono', monospace;
+}
+body,html{
+    background: url("./images/blur.jpg") no-repeat center center/cover;
+    height:100%;
+}
+header h1{
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+.clock1{
+    position:relative;
+    border:15px solid white;
+    border-radius: 50%;
+    width : 320px;
+    height:320px;
+    margin:auto;
+}
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 3px solid black;
+    border-radius:4px;
+    transform-origin: 0%;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 2.32, 0.63, 1.15);
+}
+#sec{
+    width:45%;
+}
+#min{
+    width:40%;
+}
+#hour{
+    width:30%;
+}
+ @media screen and (min-width:1000px) and (min-height:800px)
+{
+    header h1{
+        font-size: 4.5rem;
+        padding:3.2rem 3.2rem;
+    }
+    .clock1{
+        width:600px;
+        height:600px;
+    }
+}
+ @media screen and (min-width:800px) and (min-height:600px)
+{
+    header h1{
+        font-size: 3.5rem;
+        padding:2.2rem 2.2rem;
+    }
+    .clock1{
+        width:400px;
+        height:400px;
+    }
+}
+@media screen and (max-width:330px) and (min-width:220px)
+{
+    .clock1{
+        width:200px;
+        height:200px;
+        border:15px solid white;
+    }
+    header h1{
+        font-size: 2.5rem;
+        padding:1.8rem 1.8rem;
+    }
+}
+
